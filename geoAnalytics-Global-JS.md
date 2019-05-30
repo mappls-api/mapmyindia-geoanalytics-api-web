@@ -20,12 +20,12 @@
 #### JavaScript Library Name: 
 | Version | Name | Revision Remarks | Author 
 | ---- | ---- | ---- | ---- | 
-| 1.0 | [`geoAnalytics_Global_L.js`]() | Initial Release | [NS]()
+| 1.0 | [`geoAnalytics_Global_L.js`](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/JS/geoAnalytics_Global_L.js) | Initial Release | [NS]()
 
 #### Accompanying CSS: 
 | Version | Name | Revision Remarks | Author 
 | ---- | ---- | ---- | ---- | 
-| 1.0 | [`geoAnalytics_Global_L.css`]() | Initial Release | [NS]()
+| 1.0 | [`geoAnalytics_Global_L.css`](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/JS/geoAnalytics_Global_L.css) | Initial Release | [NS]()
 
 
 ## Methods available in GeoAnalytics APIs
@@ -92,11 +92,11 @@ where:
 Parameters are sent to the APIs as **`geoparams`**
 1. `AccessToken` (): These APIs follow OAuth2 based security. To know more how to create your authorization tokens, please use our authorization URL. More details are available [here](https://www.mapmyindia.com/api/advanced-maps/doc/authentication-api.php)
 2. `GeoBoundType` (String; Mandatory): The type of geographical extents on which data would be bound, i.e. the parent layer types (India, State, District, Sub District, etc.)
-**Note**: To see the list of available parent later types see the appendix [here](https://mmi-api-team.s3.ap-south-1.amazonaws.com/geoAnalyticsApiImages/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
+**Note**: To see the list of available parent later types see the appendix [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
 3. `GeoBound` (Array of Strings; Mandatory): The values of the extent depending on the GeoBoundType. (Array of Names)
-**Note**: To see the list of available types see the Listing API [here]().
+**Note**: To see the list of available types see the Listing API [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/listingAPI.md).
 4. `Attribute` (String; Optional): The name of Attribute to filter the output, such as population or number of households.
-**Note**: To see the list of available parent later types see the appendix [here](https://mmi-api-team.s3.ap-south-1.amazonaws.com/geoAnalyticsApiImages/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
+**Note**: To see the list of available parent later types see the appendix [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
 5. `Query` (String; Optional*):  A string containing an operator and a value which would be applied to the attribute filter. Applicable queries include < (Less than) OR > (Greater then) OR <> (Between). 
 Example 1: ‘> 10000’ 
 Example 2: BETWEEN `value1` AND `value2`
@@ -149,7 +149,7 @@ map.addLayer(GeoDataLayer);
 11. getVillage
 
 ## Layers and Attributes
-To get the list of available layer's and attribute's names, please use the Listing API [available here](https://github.com/kunalbharti/mapmyindia-geoanalytics-api-beta/blob/master/listingAPI.md).
+To get the list of available layer's and attribute's names, please use the Listing API [available here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/listingAPI.md).
 
 ## Getting Started
 

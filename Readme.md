@@ -1,4 +1,5 @@
-﻿# MapmyIndia Geo-Analytics APIs !
+﻿![MapmyIndia APIs](https://www.mapmyindia.com/api/img/mapmyindia-api.png)
+# MapmyIndia Geo-Analytics APIs !
 
 **Easy To Integrate Maps & Geo-Analytics APIs For Web Applications**
 
@@ -23,10 +24,10 @@ The API set also has the capability to integrate with client data as overlays.
 The APIs are OGC compliant and currently the following frameworks or libraries are supported by Geo-Analytics APIs for displaying map data on any web app.
 
 #### MapmyIndia Interactive Map JS powered libraries
-[Click here to see the documentation](https://github.com/kunalbharti/mapmyindia-geoanalytics-api-beta/blob/master/geoAnalyticsMapmyindiaAPIs.md).
+[Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Mapmyindia-JS.md).
 
 #### Global - basemap agnostic Leaflet JS Library
-[Click here to see the documentation](https://github.com/kunalbharti/mapmyindia-geoanalytics-api-beta/blob/master/geoAnalyticsGlobalAPIs.md).
+[Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Global-JS.md).
 
 #### Secondary: OpenLayer JS powered libraries. (On demand only<sup>1</sup>
 
