@@ -23,15 +23,17 @@ The API set also has the capability to integrate with client data as overlays.
 
 The APIs are OGC compliant and currently the following frameworks or libraries are supported by Geo-Analytics APIs for displaying map data on any web app.
 
-#### MapmyIndia Interactive Map JS powered libraries
+## MapmyIndia Interactive Map JS powered libraries
 [Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Mapmyindia-JS.md).
 
-#### Global - basemap agnostic Leaflet JS Library
+## Global - basemap agnostic Leaflet JS Library
 [Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Global-JS.md).
 
 #### Secondary: OpenLayer JS powered libraries. (On demand only<sup>1</sup>
 
 Both have their own independent styling options (CSS).
+
+### Usage
 
 Through the use of various methods offered by said libraries, clients can lay-out the complex and rich Map data set offered by MapmyIndia in the simplest way to geo-visualize their data and perform business analytics using location variable.
 
