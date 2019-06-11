@@ -52,8 +52,24 @@ All of these layers come with the additional styling and control options such as
 - opacity control.
 ...
 
-In addition to these layers and above defined basic functions, comes the power to query the said layers on the basis of multiple demographic attributes. (PREMIUM FEATURE).
+### Rich Attributes - Seamless linkage to Geographical Layers
+
+In addition to these layers and above defined basic functions, comes the power to query the said layers on the basis of multiple  attributes like demographics, awareness etc. (PREMIUM FEATURE).
 e.g. One can show only those states pan India whose "population" is greater than the client defined value.
+
+#### Available Attributes 
+1. **Demographics** attributes like
+	- *Population* related attributes like `total male population` in an administrative geometrical layer (e.g. in a district)
+	- *Literacy* attributes in a layer (e.g. `female literates` in a town)
+	- and many more ...
+2. **Amenities / Socio-Economic** attributes like 
+	- `Mobile Phone coverage availability` in a layer. (e.g. in a ward)
+	- `Power supply for commercial use availability` in a layer. (e.g. in a village)
+	- and many more ... 
+3. **Awareness / Penetration** attributes like
+	- `ATM availability` in a layer (e.g. in a village)
+	- `Household having four wheeler` in a layer (e.g. in a block)
+	- and many more ...
 
 ## Why GeoAnalytics APIs?
 

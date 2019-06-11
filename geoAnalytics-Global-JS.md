@@ -116,6 +116,7 @@ Example 2: BETWEEN `value1` AND `value2`
 ```css
 var geoParams = 
 {
+	AccessToken		:	'xxxx-xxxxx-xxxxxxxx-xxxxxx-xxxx',
 	GeoBoundType	:	'stt_nme',
 	GeoBound		:	['haryana'],
 	Attribute		:	't_p',
@@ -204,6 +205,7 @@ To add a `DataLayer` to the map, go through the following steps after declaring 
 ```css
 var geoParams =
 {
+	AccessToken		:	'xxxx-xxxxx-xxxxxxxx-xxxxxx-xxxx',
 	GeoBoundType	: 	'stt_nme',
 	GeoBound	: 	['haryana'],
 	Attribute		:	't_p',
