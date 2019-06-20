@@ -11,7 +11,7 @@
 
 
 ## Introduction
-Geo-Analytics API is an API set that gives the users the power to display & style the data which is archived in MapmyIndia’s pan-India database and overlay it either  on MapmyIndia’s Maps service for web or on any user created maps.
+Geo-Analytics API is an API set that gives the users the power to display & style the data which is archived in MapmyIndia’s pan-India database and overlay it on MapmyIndia’s Maps service for web.
 Listing API is an API that gives the users information on the different layers & attributes available within Geo-Analytics Core APIs. This API acts as an assisting API to quickly get the necessary details that are required to accurately fetch the required overlays from the core Geo-Analytics APIs.
 Listing API is an API that provide list of attributes along with unique ID. User can get bounding box of the required feature/area as well.
 
