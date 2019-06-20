@@ -18,8 +18,7 @@ Listing API is an API that provide list of attributes along with unique ID. User
 ### About This Release
 This is the first production release of this API which contains the basic definitions, usages, parameters, and other information regarding the API. Further releases would add more functions and modifications.
 
-### Annexure
-The complete list of attributes per layer as available within our APIs is [available here](https://mmi-api-team.s3.ap-south-1.amazonaws.com/geoAnalyticsApiImages/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf). 
+
 
 ## API URL
 
@@ -35,11 +34,11 @@ GET
 
 1.	`Parent-type Based`: (Mandatory - If addr is not given)
 	-	`geo_bound_type`(Mandatory):  Single valued parent type, for example: stt_nme, dst_nme, sdb_nme etc.
-		For parent type refer [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
+		
 	-	`geo_bound`(Mandatory): child values, for example: Haryana, Maharashtra, Goa etc
 2.	`Address Based` (Mandatory - If geo_bound_type & geo_bound are not given)
 	-	`addr` (string) : comma separated address with each parent value. (For eg. lucknow city details addr will be lucknow,uttar Pradesh)
-		For parent type refer [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
+		
 3.	`api`(Mandatory): api layer name (such as state, district, subdistrict, village, pincode etc)
 4.	`get_attr`(Mandatory): field name/Bounding Box  requested w.r.t api (api) & parent type (geo_bound_type).
 Bounding box can be requested as "b_box" variable.
