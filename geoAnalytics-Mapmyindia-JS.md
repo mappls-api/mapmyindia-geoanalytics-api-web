@@ -52,7 +52,6 @@ where:
 Parameters are sent to the APIs as **`geoparams`**
 1. `AccessToken` (Mandatory; string): These APIs follow OAuth2 based security. To know more how to create your authorization tokens, please use our authorization URL. More details are available [here](https://www.mapmyindia.com/api/advanced-maps/doc/authentication-api.php)
 2. `GeoBoundType` (String; Mandatory): The type of geographical extents on which data would be bound, i.e. the parent layer types (India, State, District, Sub District, etc.)
-**Note**: To see the list of available parent later types see the appendix [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
 3. `GeoBound` (Array of Strings; Mandatory): The values of the extent depending on the GeoBoundType. (Array of Names)
 **Note**: To see the list of available types see the Listing API [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/listingAPI.md).
 4. `Attribute` (String; Optional): The name of Attribute to filter the output, such as population or number of households.
