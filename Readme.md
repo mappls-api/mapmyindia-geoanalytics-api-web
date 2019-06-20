@@ -19,6 +19,7 @@ Empower your web and mobile applications with the most granular location-based d
 ### Introduction
 
 Geo-Analytics API is an API set that gives the users the power for selection, visualization, queries, styling and analytics on the data which is archived in MapmyIndia’s pan-India database and overlay it either  on MapmyIndia’s Maps service for web or on any user created maps.
+
 The API set also has the capability to integrate with client data as overlays.
 
 The APIs are OGC compliant and currently the following frameworks or libraries are supported by Geo-Analytics APIs for displaying map data on any web app.
@@ -26,12 +27,6 @@ The APIs are OGC compliant and currently the following frameworks or libraries a
 ## MapmyIndia Interactive Map JS powered libraries
 [Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Mapmyindia-JS.md).
 
-## Global - basemap agnostic Leaflet JS Library
-[Click here to see the documentation](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/geoAnalytics-Global-JS.md).
-
-#### Secondary: OpenLayer JS powered libraries. (On demand only<sup>1</sup>
-
-Both have their own independent styling options (CSS).
 
 ### Usage
 
@@ -75,9 +70,6 @@ e.g. One can show only those states pan India whose "population" is greater than
 
  - Reduced dependence on raw vector data, which directly reduces the vast amount of time spent in processing data updates.
  - To make the visualization and analytics lightning fast by providing a standardized DaaS (data-as-a-service) approach to fetching rich geographical data-sets - no need to fetch data directly from custom databases - geoAnalytics APIs are following industry standard (OGC) of serving data to end user for geospatial information and analytics.
-
-##### Footnotes: 
-- <sup> 1 </sup> On MapmyIndia's prerogative; Development charges extra as applicable. Please contact API support for this.
 
 For more details, please visit our [website](https://www.mapmyindia.com/geo-analytics-services/).
 
