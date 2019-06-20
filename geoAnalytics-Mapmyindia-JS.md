@@ -55,7 +55,6 @@ Parameters are sent to the APIs as **`geoparams`**
 3. `GeoBound` (Array of Strings; Mandatory): The values of the extent depending on the GeoBoundType. (Array of Names)
 **Note**: To see the list of available types see the Listing API [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/listingAPI.md).
 4. `Attribute` (String; Optional): The name of Attribute to filter the output, such as population or number of households.
-**Note**: To see the list of available parent later types see the appendix [here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/Appendix/geoAnalyticsAPIs_LayerSpecification_V2.0.pdf).
 5. `Query` (String; Optional*):  A string containing an operator and a value which would be applied to the attribute filter. Applicable queries include < (Less than) OR > (Greater then) OR <> (Between). 
 Example 1: ‘> 10000’
 Example 2: BETWEEN `value1` AND `value2`
