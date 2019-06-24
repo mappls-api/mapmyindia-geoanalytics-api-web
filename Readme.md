@@ -18,7 +18,7 @@ Empower your web with the most granular location-based demographics and socio-ec
 
 ### Introduction
 
-Geo-Analytics API is an API set that gives the users the power for selection, visualization, queries, styling and analytics on the data which is archived in MapmyIndia’s pan-India database and overlay on MapmyIndia’s Maps service for web.
+Geo-Analytics API is an API set that gives the users the power for selection, visualization, queries, styling and analytics on the data which is archived in MapmyIndia’s pan-India database and overlay on MapmyIndia’s Maps service for web application.
 
 The API set also has the capability to integrate with client data as overlays.
 
