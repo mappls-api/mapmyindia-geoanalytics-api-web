@@ -36,11 +36,11 @@ GET
 
 1.	`Parent-type Based`: (Mandatory - If addr is not given)
 	-	`geo_bound_type`(Mandatory):  Single valued parent type, for example: stt_nme, dst_nme, sdb_nme etc.
-**Note**: For parent type reference contact [apisupport@mapmyindia.com](mailto:apisupport@mapmyindia.com)
+**Note**: For parent type reference, contact [apisupport@mapmyindia.com](mailto:apisupport@mapmyindia.com)
 	-	`geo_bound`(Mandatory): child values, for example: Haryana, Maharashtra, Goa etc
 2.	`Address Based` (Mandatory - If geo_bound_type & geo_bound are not given)
 	-	`addr` (string) : comma separated address with each parent value. (For eg. lucknow city details addr will be lucknow,uttar Pradesh)
-	**Note**: For parent type reference contact [apisupport@mapmyindia.com](mailto:apisupport@mapmyindia.com)
+	**Note**: For parent type reference, contact [apisupport@mapmyindia.com](mailto:apisupport@mapmyindia.com)
 3.	`api`(Mandatory): api layer name (such as state, district, subdistrict, village, pincode etc)
 4.	`get_attr`(Mandatory): field name/Bounding Box  requested w.r.t api (api) & parent type (geo_bound_type).
 Bounding box can be requested as "b_box" variable.
