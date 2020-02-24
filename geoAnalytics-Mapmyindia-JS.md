@@ -6,6 +6,7 @@
 
 | Version | Last Updated | Author |
 | ---- | ---- | ---- |
+| 3.2 | 24 February 2020 | MapmyIndia API Team ([NS]())
 | 3.1 | 20 May 2019 | MapmyIndia API Team ([NS]())
 | 3.0 | 02 April 2019 | MapmyIndia API Team ([NS]())
 | 1.0 | 14 Jan 2019 | MapmyIndia API Team ([NS]()) |
@@ -73,7 +74,7 @@ Example 2: BETWEEN `value1` AND `value2`
 		***Note**: All starred parameters are mandatory if `Style` is given.
 
 #### Example
-```css
+```js
 var geoParams = 
 {
 	AccessToken		:	'xxxx-xxxxx-xxxxxxxx-xxxxxx-xxxx',
@@ -108,6 +109,8 @@ map.addLayer(GeoDataLayer);
 9. getPanchayat
 10. getBlock
 11. getVillage
+12. getSubLocality
+13. getSubSubLocality
 
 ## Layers and Attributes
 To get the list of available layer's and attribute's names, please use the Listing API [available here](https://github.com/MapmyIndia/mapmyindia-geoanalytics-api-web/blob/master/listingAPI.md).
@@ -123,7 +126,8 @@ Follow the documentation of [Interactive Map API](https://www.mapmyindia.com/api
 To add a `DataLayer` to the map, go through the following steps after declaring the map object:
 
 - First, declare the `DataLayer` object
-```css
+
+```js
 var geoParams =
 {
 	AccessToken		:	'xxxx-xxxxx-xxxxxxxx-xxxxxx-xxxx',
@@ -144,36 +148,36 @@ var geoParams =
 };
 ```
 - Second, declare the `GeoDataLayer` object by calling new `geoAnalytics.get<layerName>` method in the JavaScript and passing the above created `geoParams` object in it.
-```css
+```js
 var GeoDataLayer = geoAnalytics.getPanchayat(geoParams); // for panchayat layer
 ```
 - Third, Add the `GeoDataLayer` object on the map on the map object created above:
-```css
+```js
 map.addLayer(GeoDataLayer);
 ```
 - Finally, call the MapmyIndia’s Listing APIs to get the bounding box of the `DataLayer` to set the bounds of the map with respect to the `DataLayer` . Refer to the Listing API documentation for more information  (Alternatively call the new `geoAnalytics.setBounds` method in the JavaScript and pass it layer name, `geoParams` and map objects in it to set the bounds of map to the bounding box of `GeoDataLayer`. 
-```css
+```js
 geoAnalytics.setBounds('pincode',geoParams,map); // for pincode layer
 ```
 ### Info Windows
 Info Windows are a convenient way of showing data about a point in the `DataLayer`. The expected behaviour of a user to know about any point in the `DataLayer` is to try and click on it to know what it is all about. The mechanism to accomplish this is by showing an info window.
 The info window for a `DataLayer`(created previously) can be obtained through following steps:
 - Create a click event on the map.
-```css
+```js
 map.on('click', function(e) 
 {
 // e stands for the event in which the click happens
 });
 ```
 - Declare the attribute names in propertyName  that you want to see in the info  window.
-```css
+```js
 map.on('click', function(e) 
 {
 var propertyName = 'stt_nme,stt_id,t_p,t_m,t_f,label';
 });
 ```
 - Call a new `geoAnalytics.getFeatureInfo` method in the JavaScript and pass the `event`, `propertyName` and `GeoDataLayer` in it. This will give json response in which all the information for the requested attribute will be available.
-```css
+```js
 map.on('click', function(e) 
 {
 var propertyName = 'stt_nme,stt_id,t_p,t_m,t_f,label';
@@ -181,7 +185,7 @@ var Infodata = geoAnalytics.getFeatureInfo(e,propertyName,GeoDataLayer);
 });.
 ```
 - Create a variable html and add the data into it.
-```css
+```js
 map.on('click', function(e) 
 {
 var propertyName = 'stt_nme,stt_id,t_p,t_m,t_f,label';
@@ -201,7 +205,7 @@ if(Infodata.features[0])
 );
 ```
 - Finally, add the info window to the map by creating a leaflet popup.
-```css
+```js
 map.on('click', function(e) 
 {
 var propertyName = 'stt_nme,stt_id,t_p,t_m,t_f,label';
